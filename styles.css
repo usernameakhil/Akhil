@@ -167,14 +167,43 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  align-items: center;
 }
 
 .section__pic-container {
+  position: relative;
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
 
+.profile-pic {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.profile-pic-border img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.profile-pic-border {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  pointer-events: none;
+  mask-image: radial-gradient(circle 80px at -200px -200px, transparent 0%, black 100%);
+  -webkit-mask-image: radial-gradient(circle 80px at -200px -200px, transparent 0%, black 100%);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
 }
 
 .section__text {
